@@ -1,6 +1,8 @@
 package main
 
 import (
+	"gin-mongo-api/configs"
+
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,6 +14,7 @@ func main() {
 			"data": "Hello from Gin-gonic & mongoDB",
 		})
 	})
+	configs.ConnectDB()
 
 	router.Run("localhost:8080")
 }
