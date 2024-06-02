@@ -1,17 +1,10 @@
 # Go Gin-Gonic CRUD Application
 
 This is a Go Gin web application that performs CRUD operations on a User model. The application is Dockerized for easy deployment and management.
-API Endpoints
 
-Here are the available API endpoints for CRUD operations on the User model:
+---
 
-    POST /user - Create a new user
-    GET /user/:userId - Retrieve a user by ID
-    PUT /user/:userId - Update a user by ID
-    DELETE /user/:userId - Delete a user by ID
-    GET /users - Retrieve a list of all users
-
-Running the Application with Docker
+## Running the Application with Docker
 
 The application is Dockerized, which means you can run it easily using Docker and Docker Compose.
 Prerequisites
@@ -19,7 +12,8 @@ Prerequisites
     Docker
     Docker Compose
 
-Steps to Run
+Steps to Run 
+---
 
     # Clone the Repository
 
@@ -29,17 +23,18 @@ Steps to Run
     cd gin-gonic
 
 Create a .env File
-
+---
+```sh 
 Create a .env file in the root directory with the following content:
 
     env
 
     MONGO_URI: The connection string for your MongoDB instance.
     DB_NAME: The name of your MongoDB database.
+```
 
 Build and Run the Application
-
-Use Docker Compose to build and run the application:
+---
 ```sh
     docker build -t go.0.1 .
 
@@ -56,6 +51,7 @@ Use Docker Compose to build and run the application:
 
 
 Project Structure
+---
 
             gin-gonic
             ├── configs
@@ -85,8 +81,19 @@ Project Structure
     main.go: The main application file.
     README.md: This README file.
 
-### Example Requests
+API Endpoints
+---
 
+Here are the available API endpoints for CRUD operations on the User model:
+
+    POST /user - Create a new user
+    GET /user/:userId - Retrieve a user by ID
+    PUT /user/:userId - Update a user by ID
+    DELETE /user/:userId - Delete a user by ID
+    GET /users - Retrieve a list of all users
+
+### Example Requests
+---
 ```sh
 # Retrieve a specific user
 curl --location 'http://localhost:4455/user/665c067a4124173c2f0d5bc7/'
