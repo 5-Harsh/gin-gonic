@@ -40,7 +40,7 @@ Create a .env file in the root directory with the following content:
 Build and Run the Application
 
 Use Docker Compose to build and run the application:
-
+```sh
     docker build -t go.0.1 .
 
     docker-compose up -d
@@ -51,8 +51,8 @@ Use Docker Compose to build and run the application:
 
     Once the container is running, you can access the application at 
     
-    http://localhost:8080.
-
+    http://localhost:4455.
+```
 
 
 Project Structure
